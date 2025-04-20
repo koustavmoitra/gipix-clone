@@ -25,7 +25,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+            <section className="py-16 pb-5 mt-3 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-4xl mx-auto">
 
                     <h2 className='text-lg text-red-500 text-center font-bold mb-4'>WELCOME TO GIPIX LANDING PAGE</h2>
@@ -41,12 +41,13 @@ const LandingPage = () => {
 
 
 
-            <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white">
+            <section className="py-5 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
                         {/* --- left image --- */}
-                        <div className=" overflow-hidden  ">
+                        <div className=" animate-float ">
+                            <div class="absolute left-[80px] w-[500px] h-[500px] bg-gray-100 rounded-full -z-10"></div>
                             <img
                                 src={customize}
                                 alt="Main visual"

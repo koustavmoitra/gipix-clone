@@ -8,8 +8,8 @@ export default function Plan() {
             backgroundImage: `url(${planbg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '100vh',
             width: '100%',
+            padding: '60px'
         }}>
 
             {/* --- heading --- */}
@@ -19,9 +19,9 @@ export default function Plan() {
                 <p className='text-center text-5xl font-bold mb-3'>Charges</p>
             </div>
 
-            {/* --- card 1 --- */}
             <div id="pricing" className='flex justify-center gap-[50px]'>
-                <div id="pricing-1" className='w-[400px]'>
+                {/* --- card 1 --- */}
+                <div id="pricing-1" className='w-[400px] hover:shadow-[10px_0_25px_-5px_rgba(0,0,0,0.2),-10px_0_25px_-5px_rgba(0,0,0,0.2)] transition duration-300'>
                     <div className='bg-[#22244d] rounded-t-2xl text-white p-10 pt-5'>
                         <p className='text-xl font-semibold mb-3'>Basic Plan</p>
                         <p className='text-xl font-semibold mb-5'><span className='text-6xl'>$40</span> / month</p>
@@ -52,7 +52,7 @@ export default function Plan() {
 
 
                 {/* --- card 2 --- */}
-                <div id="pricing-2" className='w-[400px]'>
+                <div id="pricing-2" className='w-[400px] hover:shadow-[10px_0_25px_-5px_rgba(0,0,0,0.2),-10px_0_25px_-5px_rgba(0,0,0,0.2)] transition duration-300'>
                     <div className='bg-[#22244d] rounded-t-2xl text-white p-10 pt-5'>
                         <p className='text-xl font-semibold mb-3'>Business Plan</p>
                         <p className='text-xl font-semibold mb-5'><span className='text-6xl'>$70</span> / month</p>
@@ -83,7 +83,7 @@ export default function Plan() {
 
 
                 {/* --- card 3 --- */}
-                <div id="pricing-3" className='w-[400px]'>
+                <div id="pricing-3" className='w-[400px] hover:shadow-[10px_0_25px_-5px_rgba(0,0,0,0.2),-10px_0_25px_-5px_rgba(0,0,0,0.2)] transition duration-300'>
                     <div className='bg-[#22244d] rounded-t-2xl text-white p-10 pt-5'>
                         <p className='text-xl font-semibold mb-3'>Premium Plan</p>
                         <p className='text-xl font-semibold mb-5'><span className='text-6xl'>$90</span> / month</p>

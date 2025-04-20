@@ -32,7 +32,7 @@ const Service = () => {
             title: "Dedicated Server",
             description: "Enim ad minim veniam, quis rem ipsum dolor sit amet, ao eiusmod tempor incididun ther chancer",
             image: server3,
-            bgColor: "#e66249",
+            bgColor: "#de7148",
         }
     ]
 
@@ -94,10 +94,11 @@ const Service = () => {
 
 
 
+
     return (
         <>
 
-            <div className="max-w-7xl mx-auto ">
+            <div className="max-w-7xl mx-auto mt-10">
                 <h2 className="text-lg text-red-500 text-left font-bold mb-4">Key Featured For Landing Page
                 </h2>
                 {/* --- heading --- */}
@@ -151,7 +152,7 @@ const Service = () => {
 
                     {/* --- button --- */}
                     <div className="flex-shrink-0">
-                        <button className="bg-[#e66249] hover:bg-white hover:text-orange-400 hover:border-2 border-orange-400 hover:rounded-br-3xl  text-white text-lg font-medium py-4 p-16  rounded-tl-3xl  rounded-tr-3xl rounded-br-none  rounded-bl-3xl   transition duration-300">
+                        <button className="bg-[#e66249] hover:bg-white hover:text-orange-400 hover:border-2 border-orange-400 hover:rounded-full  text-white text-lg font-medium py-4 p-16  rounded-tl-full  rounded-tr-full rounded-br-none  rounded-bl-full   transition duration-400">
                             username@Domain.com
                         </button>
                     </div>
@@ -180,13 +181,13 @@ const Service = () => {
                 {/* --- left steps --- */}
                 <div className="space-y-8">
                     {steps.map((step) => (
-                        <div key={step.number} className="flex items-start gap-4">
+                        <div key={step.number} className="flex items-start gap-4 group">
                             {/* --- number badge --- */}
                             <div className="relative">
-                                <div className="bg-[#FF5E3A] rounded-full rounded-tr-xl p-6 w-24 h-24 flex items-center justify-center text-3xl">
+                                <div id="big-c" className="bg-[#FF5E3A] rounded-full rounded-tr-xl p-6 w-24 h-24 flex items-center justify-center text-3xl group-hover:bg-yellow-400 group-hover:rounded-full group-hover:text-black transition duration-300 ">
                                     <img src={step.image} alt={`Step ${step.number}`} className="w-10 h-10" />
                                 </div>
-                                <span className="absolute -top-1 -left bg-yellow-400 text-black text-sm w-6 h-6 rounded-full flex items-center justify-center font-bold">
+                                <span div-small-c className="absolute -top-1 -left bg-yellow-400 text-black text-sm w-6 h-6 rounded-full flex items-center justify-center font-bold group-hover:bg-[#FF5E3A] group-hover:rounded-full group-hover:text-white transition duration-300">
                                     {step.number}
                                 </span>
                             </div>
@@ -203,11 +204,12 @@ const Service = () => {
                 </div>
 
                 {/* --- right side image --- */}
-                <div className="flex justify-center md:justify-end">
+                <div className="flex justify-center md:justify-end relative">
+                    <div class="absolute left-[40px] w-[550px] h-[550px] bg-gray-100 rounded-full -z-10"></div>
                     <img
                         src={customize2}
                         alt="Steps Illustration"
-                        className="max-w-full h-auto object-contain rounded-full"
+                        className="max-w-full h-auto object-contain rounded-full animate-float"
                     />
                 </div>
             </div>
@@ -218,7 +220,7 @@ const Service = () => {
             <div className="mx-auto mb-10 mt-10 flex justify-center">
                 <div
                     ref={containerRef}
-                    className="flex space-x-24 transition-all duration-500 overflow-x-auto scrollbar-hide"
+                    className="flex space-x-24 transition-all duration-500 overflow-x-auto  "
                 >
                     {images.map((img, index) => (
                         <img
@@ -230,6 +232,7 @@ const Service = () => {
                     ))}
                 </div>
             </div>
+
 
         </>
     )
